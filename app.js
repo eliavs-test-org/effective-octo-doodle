@@ -17,7 +17,10 @@ app.use((err, req, res, next) => {
   console.error(err.stack);
   res.status(500).json({ message: "Something went wrong!" });
 });
-
+const password = "secret_1";
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
+
+
+console.log(password);
